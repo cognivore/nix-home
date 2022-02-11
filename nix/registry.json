@@ -1,0 +1,27 @@
+{
+  "flakes": [
+    {
+      "from": {
+        "id": "heating-on",
+        "type": "indirect"
+      },
+      "to": {
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    {
+      "from": {
+        "id": "moz",
+        "type": "indirect"
+      },
+      "to": {
+        "owner": "mozilla",
+        "repo": "nixpkgs-mozilla",
+        "type": "github"
+      }
+    }
+  ],
+  "version": 2
+}
