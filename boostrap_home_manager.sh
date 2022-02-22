@@ -25,7 +25,7 @@ Afterwards, add the following to your ~/.bashrc:
 
 """
 #
-if [ -e ${HOME}/.nix-profile/etc/profile.d/nix.sh ]; then . ${HOME}/.nix-profile/etc/profile.d/nix.sh; fi
+if [ -e \${HOME}/.nix-profile/etc/profile.d/nix.sh ]; then . \${HOME}/.nix-profile/etc/profile.d/nix.sh; fi
 
 # Direnv!
 export NIX_PATH=\$HOME/.nix-defexpr/channels\${NIX_PATH:+:}\$NIX_PATH
