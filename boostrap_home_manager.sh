@@ -9,7 +9,7 @@ git clone https://github.com/cognivore/nix-home.git
 
 ## First populate .local/bin which has some spicy stuff for convenience CLI scripts
 mkdir ~/.local
-git clone https://github.com/cognivore/local-bin.git ~/.local/bin
+git clone https://github.com/cognivore/local-bin.git ~/.local/nbin
 
 ## Then link stuff in ~/.config (assuming you cloned this repo into ~/nix-home)
 mkdir ~/.config
@@ -17,6 +17,10 @@ ln -sT "${HOME}/nix-home/nix" ~/.config/nix
 ln -sT "${HOME}/nix-home/nixpkgs" ~/.config/nixpkgs
 
 cat <<BEEP
+Add ~/.local/nbin to your PATH:
+
+
+
 Edit your ~/.config/nixpkgs/home.nix:
  - [ ] Set home.username to $(whoami).
  - [ ] Set home.homeDirectory to ${HOME}.
