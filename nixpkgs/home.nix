@@ -22,5 +22,5 @@
   programs.direnv.enable = true;
   programs.direnv.nix-direnv.enable = true;
 
-  home.packages = [] ++ (import ../../.local/bin/home-manager.nix {pkgs = pkgs;});
+  home.packages = [] ++ (import ../../.local/nbin/home-manager.nix {pkgs = pkgs;});
 }
