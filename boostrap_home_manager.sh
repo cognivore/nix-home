@@ -17,9 +17,9 @@ ln -sT "${HOME}/nix-home/nix" ~/.config/nix
 ln -sT "${HOME}/nix-home/nixpkgs" ~/.config/nixpkgs
 
 cat <<BEEP
-Add ~/.local/nbin to your PATH:
 
-
+Add ~/.local/nbin to your PATH: 
+ - [ ] 'export PATH=$HOME/.local/nbin:$PATH'
 
 Edit your ~/.config/nixpkgs/home.nix:
  - [ ] Set home.username to $(whoami).
@@ -28,7 +28,7 @@ Edit your ~/.config/nixpkgs/home.nix:
 Afterwards, add the following to your ~/.bashrc:
 
 """
-#
+# Nix!
 if [ -e \${HOME}/.nix-profile/etc/profile.d/nix.sh ]; then . \${HOME}/.nix-profile/etc/profile.d/nix.sh; fi
 
 # Direnv!
