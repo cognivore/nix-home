@@ -19,7 +19,7 @@ ln -sT "${HOME}/nix-home/nixpkgs" ~/.config/nixpkgs
 cat <<BEEP
 
 Add ~/.local/nbin to your PATH: 
- - [ ] 'export PATH=$HOME/.local/nbin:$PATH'
+ - [ ] 'export PATH=$HOME/.local/nbin:\$PATH'
 
 Edit your ~/.config/nixpkgs/home.nix:
  - [ ] Set home.username to $(whoami).
