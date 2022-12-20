@@ -18,7 +18,7 @@ ln -sT "${HOME}/nix-home/nixpkgs" ~/.config/nixpkgs
 
 cat <<BEEP
 
-Add ~/.local/nbin to your PATH: 
+Add ~/.local/nbin to your PATH:
  - [ ] 'export PATH=$HOME/.local/nbin:\$PATH'
 
 Edit your ~/.config/nixpkgs/home.nix:
@@ -33,6 +33,7 @@ if [ -e \${HOME}/.nix-profile/etc/profile.d/nix.sh ]; then . \${HOME}/.nix-profi
 
 # Direnv!
 export NIX_PATH=\$HOME/.nix-defexpr/channels\${NIX_PATH:+:}\$NIX_PATH
+export NIX_PATH="home-manager=\$HOME/home-manager:\${NIX_PATH}"
 source \$HOME/.nix-profile/etc/profile.d/hm-session-vars.sh
 eval "\$(direnv hook bash)"
 """
